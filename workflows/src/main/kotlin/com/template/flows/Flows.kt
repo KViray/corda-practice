@@ -17,7 +17,6 @@ class Initiator : FlowLogic<Unit>() {
         // Initiator flow logic goes here.
     }
 }
-
 @InitiatedBy(Initiator::class)
 class Responder(val counterpartySession: FlowSession) : FlowLogic<Unit>() {
     @Suspendable
